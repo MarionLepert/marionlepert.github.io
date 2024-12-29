@@ -214,6 +214,10 @@
         // Retrieve cached button click.
         var defaultFilterValue = ".publication";
         $grid.isotope({ filter: defaultFilterValue });
+
+        // Force a layout recalculation
+        $grid.isotope('layout');
+
         var buttons = document.getElementsByClassName("button");
         for (var currButton of buttons) {
           if (currButton.getAttribute('data-filter') == defaultFilterValue) {
