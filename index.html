@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Google analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STGLQW4BJX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-STGLQW4BJX');
+    </script>
+
+    <!-- Title -->
+    <title>Marion Lepert</title>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=1000"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Marion Lepert</h1>
+          <p>
+            I'm a final year Ph.D. student in robotics at <a href="https://ai.stanford.edu/">Stanford University</a> advised by <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a> in the <a href="https://iprl.stanford.edu/">Interactive Perception and Robot Learning Lab</a>. My research focuses on leveraging cross-embodied data for robot learning. I received my B.S. in Mechanical Engineering from Stanford. 
+
+            <br> 
+            <br> 
+            Previously, I represented the United States at the 2016 Olympic Games in windsurfing. 
+            <br>
+            <br>
+
+            <a href="mailto:marion.lepert@gmail.com">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                Email
+              </a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://scholar.google.com/citations?user=Wp5ZuXgAAAAJ&hl=en&oi=ao">
+                  <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                  Google Scholar
+              </a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/marion-lepert/">
+                  <span class="icon"><i class="fab fa-linkedin"></i></span>
+                  LinkedIn
+              </a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://x.com/marionlepert">
+                  <span class="icon"><i class="fab fa-twitter"></i></span>
+                  Twitter
+              </a>
+            <br><br>
+
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="images/profile.jpg">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <button class="button" data-filter=".publication">Research</button>
+      </div>
+
+      <div class="grid">
+
+
+
+        <!-- Toggle highlights button. -->
+        <div class="list-item highlight toggle-button" data-category="highlight">
+          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+        </div>
+
+
+
+
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://shadow-cross-embodiment.github.io/" class="thumbnail">
+            <img src="images/shadow.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://shadow-cross-embodiment.github.io/">Shadow: Leveraging Segmentation Masks for Cross-Embodiment Policy Transfer</a></h3>
+            <p>
+                <b style="color:black; font-weight:400">Marion Lepert</b>, Ria Doshi, Jeannette Bohg<br>
+                <i>Conference on Robot Learning (CoRL) 2024</i><br>
+                <a href="https://shadow-cross-embodiment.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://shadow-cross-embodiment.github.io/static/shadow24.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://droid-dataset.github.io/" class="thumbnail">
+            <img src="images/droid.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://droid-dataset.github.io/">Droid: A large-scale in-the-wild robot manipulation dataset</a></h3>
+            <p>
+                Alexander Khazatsky*, Karl Pertsch*, ..., <b style="color:black; font-weight:400">Marion Lepert</b>, ..., Sergey Levine, Chelsea Finn<br>
+                <i>Robotics: Science and Systems (RSS) 2024</i><br>
+                <a href="https://droid-dataset.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2403.12945">PDF</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+            <a href="https://tidybot.cs.princeton.edu/" class="thumbnail">
+              <img src="images/tidybot.gif" alt="" />
+            </a>
+            <div class="project-description">
+              <h3><a href="https://tidybot.cs.princeton.edu/">TidyBot: Personalized robot assistance with large language models</a></h3>
+              <p>
+                  Jimmy Wu, Rika Antonova, Adam Kan, <b style="color:black; font-weight:400">Marion Lepert</b>, Andy Zeng, Shuran Song, Jeannette Bohg, Szymon Rusinkiewicz, Thomas Funkhouser<br>
+                  <i>Autonomous Robots (AuRo) - Special Issue: Large Language Models in Robotics 2023</i><br>
+                  <i>International Conference on Intelligent Robots and Systems (IROS) 2023</i><br>
+                  <a href="https://tidybot.cs.princeton.edu/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://arxiv.org/abs/2305.05658">PDF</a>
+                  <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+              </p>
+            </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+            <a href="https://sites.google.com/stanford.edu/taskdriven-inhandmanip/home" class="thumbnail">
+              <img src="images/rollergrasper.gif" alt="" />
+            </a>
+            <div class="project-description">
+              <h3><a href="https://sites.google.com/stanford.edu/taskdriven-inhandmanip/home">In-Hand Manipulation of Unknown Objects with Tactile Sensing for Insertion</a></h3>
+              <p>
+                  <b style="color:black; font-weight:400">Marion Lepert*</b>, Chaoyi Pan*, Shenli Yuan, Rika Antonova, Jeannette Bohg<br>
+                  <i>International Conference on Intelligent Robots and Systems (IROS) 2023</i><br>
+                  <a href="https://sites.google.com/stanford.edu/taskdriven-inhandmanip/home">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://arxiv.org/abs/2210.13403">PDF</a>
+                  <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+              </p>
+            </div>
+        </div>
+
+
+        <div class="list-item publication" data-category="publication">
+            <a href="https://arxiv.org/abs/2109.14088" class="thumbnail">
+              <img src="images/trajectotree.gif" alt="" />
+            </a>
+            <div class="project-description">
+              <h3><a href="https://arxiv.org/abs/2109.14088">Trajectotree: Trajectory optimization meets tree search for planning multi-contact dexterous manipulation</a></h3>
+              <p>
+                  Claire Chen, Preston Culbertson, <b style="color:black; font-weight:400">Marion Lepert</b>, Mac Schwager, Jeannette Bohg<br>
+                  <i>International Conference on Intelligent Robots and Systems (IROS) 2021</i><br>
+                  <a href="https://arxiv.org/abs/2109.14088">PDF</a>
+                  <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+              </p>
+            </div>
+        </div>
+
+
+      </div>
+
+      <div id="footer">Inspired by <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng's website</a>.</div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_highlights() {
+        var x = document.getElementById("main-highlights");
+        var y = document.getElementById("more-highlights");
+        var b = document.getElementById("toggle_highlights_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
+</html>
