@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  overflow-x:hidden;
 }
 ol, ul {
   list-style: none;
@@ -53,13 +54,15 @@ table {
   color: #150c21;
 }
 
-#main {
-  width: 54em;
-  margin: 0px auto;
-  position: relative;
-  min-height: 100vh;
-}
 
+#main {
+    width: 100%;
+    max-width: 54em; 
+    margin: 0px auto;
+    position: relative;
+    min-height: 100vh;
+}
+  
 a {
   text-decoration: none;
   color: rgb(20, 110, 190);
@@ -88,27 +91,30 @@ h1 {
 /* Profile image and description. */
 
 #intro {
-  padding-top: 6em;
-  display: flex;
+    padding-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:2em;    
 }
-
+  
 #intro-text {
-  width: 40em;
-  float: left;
+    width: 40em;
+    margin-right:1em;
 }
-
+  
 #intro-image {
-  margin: 2em 0 0 2em;
-  width: 12em;
-  height: 12em;
-  float: left;
-  overflow: hidden;
-  border-radius: 1em;
-}
+    margin: 0em 0;
+    padding-top: 1em;
+    width: 60%;
+    height: auto;
+    flex: 1 1 11em;
+  }
+  
+  #intro-image img {
+    width: 13em;
+    border-radius: 10%;
+  }
 
-#intro-image img {
-  width: 12em;
-}
 
 /**************************************************/
 /* Section buttons. */
@@ -305,3 +311,66 @@ h3 a:hover {
   bottom: 0;
   line-height: 2.5em;
 }
+
+@media (max-width: 900px) {
+    #main {
+        width: 90%;
+    }
+  
+    #intro {
+      flex-direction: column;
+      align-items: center;
+      text-align:center
+    }
+  
+    #intro-image {
+        width: 60%;
+        height: auto;
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+  
+    #intro-text {
+        width: 100%;
+        text-align: center;
+        margin-right:0em
+    }
+  
+    .thumbnail {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: left;
+        width:  100%;
+        height: auto;
+        max-width: 150px; 
+        
+    }
+  
+    .list-item {
+        margin-top: 0.5em;
+        margin-right: 0em;
+    }
+
+    
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  
+    h1 {
+        font-size: 1.8em;
+    }
+  
+    h3 {
+        font-size: 0.9em;
+    }
+  
+    #main {
+      width: 90%;
+    }
+  
+  }
